@@ -1,0 +1,9 @@
+.conteinerElementTalsk{
+    @apply flex justify-around font-Outfit gap-3 mt-14 mobil:mx-2 MiniPortable:mx-2
+}
+.textTitelTask{
+    @apply capitalize text-4xl font-bold mobil:text-xl MiniPortable:text-lg
+}
+.subTitleTask{
+    @apply text-gray-400 text-2xl mobil:text-base MiniPortable:text-base
+}
