@@ -1,5 +1,6 @@
 
 import NavContainer from "@/components/navbar/navContainer";
+import ContainerTask from "@/components/TaskToday/conteinerTask";
 import localFont from "next/font/local";
 import { useState } from "react";
 
@@ -42,7 +43,7 @@ export default function Home() {
           <NavContainer HandlerClicked={handlerCliked}/>
           <div className="overflow-y-scroll h-[800px]">
             {card1 && (<div><p className="text-center font-Outfit capitalize text-3xl py-40 text-gray-400">none (0)</p></div>)}
-            {card2 && (<div><p>today's Talsk</p></div>)}
+            {card2 && (<div><ContainerTask/></div>)}
             {card3 && (<div><p className="text-center font-Outfit capitalize text-3xl py-40 text-gray-400 Tablette:text-lg mobil:text-lg MiniPortable:text-sm  ">no Activity to day</p></div>)}
           </div>
       </div>
