@@ -1,8 +1,10 @@
 import React from "react";
 
 export default function BtnstatusTask(props) {
+
+  
   return (
-    <div className="border-r flex justify-between px-8 MiniPortable:px-2 mobil:px-1 mobil:border-none MiniPortable:border-none MiniPortable:mt-2 mobil:mb-3">
+    <div onClick={props.HandlerFunc} id={props.id} className="border-r flex justify-between px-8 MiniPortable:px-2 mobil:px-1 mobil:border-none MiniPortable:border-none MiniPortable:mt-2 mobil:mb-3">
       <button className="text-gray-400 text-xl capitalize MiniPortable:text-lg mobil:text-lg">
         {props.title}
       </button>

@@ -11,6 +11,8 @@ export default function ContainerTask() {
   const [timeOpen, setTimeOpen] = useState("");
   const [timeClosed, setTimeClosed] = useState("");
   const [tableau, setTableau] = useState([]);
+  const [selectedCard,setSelectedCard]=useState()
+
 
   const handlerChangeTitleFunc = (e) => {
     setTitletask(e.target.value);
@@ -46,7 +48,12 @@ export default function ContainerTask() {
   const handlerClick = () => {
     setBoxTask(!boxTask);
   };
-  console.log(tableau.length);
+
+  const handlerSeleded=(taskId)=>{
+    setSelectedCard(taskId)
+    console.log(selectedCard);
+    
+  }
 
   return (
     <div className="relative">
@@ -65,7 +72,7 @@ export default function ContainerTask() {
         HandlerFun={handlerClick}
       />
       <NavStatusTask Tableau={tableau} />
-      <ul className={tableau.length ? "overflow-y-scroll h-80" : "h-80"}>
+      {/* <ul className={tableau.length ? "overflow-y-scroll h-80" : "h-80"}>
         {tableau.map((task) => (
           <div key={task.id}>
             <TaskList
@@ -73,10 +80,12 @@ export default function ContainerTask() {
               projet={task.projet}
               Start={task.Start}
               Closed={task.Closed}
+              HandlerSelected={()=>handlerSeleded(task.id)}
+              isSelected={selectedCard===task.id}
             />
           </div>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

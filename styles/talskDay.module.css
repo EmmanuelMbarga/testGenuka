@@ -1,3 +1,9 @@
+.cardsStyle{
+    @apply font-Outfit mb-14
+}
+.taskStyleCard{
+    @apply max-w-[800px] cursor-pointer m-auto p-4 mobil:p-2 MiniPortable:p-1
+}
 .conteinerElementTalsk{
     @apply flex justify-around font-Outfit gap-3 mt-14 mobil:mx-2 MiniPortable:mx-2 MiniPortable:flex-col
 }
@@ -8,9 +14,12 @@
     @apply text-gray-400 text-2xl mobil:text-base MiniPortable:text-base
 }
 .taskCard1{
-    @apply flex justify-around items-center mobil:px-4 MiniPortable:px-4
+    @apply flex justify-between items-center mobil:px-4 MiniPortable:px-4
 }
 .taskCardtitle{
+    @apply text-3xl capitalize mobil:text-xl MiniPortable:text-lg
+}
+.taskCardtitlethrough{
     @apply text-3xl capitalize mobil:text-xl MiniPortable:text-lg line-through
 }
 .taskSubTitle{
@@ -19,9 +28,32 @@
 .containerSelecteTaskOn{
     @apply w-10 h-10 bg-blue-400 rounded-full flex justify-center items-center
 }
+.containerSelecteTaskOff{
+    @apply w-10 h-10 bg-red-400 rounded-full flex justify-center items-center
+}
 .seledtTaskIcon{
     @apply text-2xl text-white
 }
+.containerElemntSub{
+    @apply flex justify-between gap-4 items-center mt-14 mobil:flex-col MiniPortable:flex-col mobil:mt-8
+}
+.containerTaskDate{
+    @apply flex gap-4 MiniPortable:px-2
+}
+.dateTask{
+    @apply text-xl capitalize text-gray-500 MiniPortable:text-lg
+}
+.timedateTask{
+    @apply text-lg capitalize text-gray-400 MiniPortable:text-sm
+}
+.cardStyleCollborator{
+    @apply bg-red-500 w-14 h-14 border-white border-4 rounded-full  -ml-4
+}
+.cardStyleCollboratorend{
+    @apply bg-red-500 w-14 border-white border-4 -ml-4  h-14 rounded-full
+}
+
+
 .formtasklabel{
     @apply capitalize text-xl mobil:text-lg MiniPortable:text-sm
 }

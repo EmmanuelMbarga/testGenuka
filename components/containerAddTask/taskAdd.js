@@ -11,7 +11,7 @@ export default function TaskAdd(props) {
         <div
           className={
             props.BoxTask &&
-            "bg-sky-500 backdrop-blur-sm bg-opacity-20 absolute w-full rounded-md font-Outfit p-4 my-4 translate-y-0 transition"
+            "bg-sky-500 backdrop-blur-sm bg-opacity-20 absolute w-full rounded-md font-Outfit p-4 my-4 translate-y-0 transition mobil:-mt-28 MiniPortable:-mt-36"
           }
         >
           <div className="flex justify-end">
