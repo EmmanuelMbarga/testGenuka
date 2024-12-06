@@ -3,7 +3,7 @@ import { IoMdCheckmark } from "react-icons/io";
 import Style from "../../styles/talskDay.module.css";
 
 export default function TaskList(props) {
-  console.log(props.isSelected );
+
   
   return (
     <div className={`${Style.cardsStyle}`}>

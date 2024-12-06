@@ -26,7 +26,7 @@
     @apply text-xl capitalize text-gray-400 mt-4 mobil:text-lg mobil:mt-2 MiniPortable:text-sm MiniPortable:mt-2
 }
 .containerSelecteTaskOn{
-    @apply w-10 h-10 bg-blue-400 rounded-full flex justify-center items-center
+    @apply w-10 h-10 bg-blue-500 rounded-full flex justify-center items-center
 }
 .containerSelecteTaskOff{
     @apply w-10 h-10 bg-red-400 rounded-full flex justify-center items-center
