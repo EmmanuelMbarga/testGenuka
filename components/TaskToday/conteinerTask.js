@@ -72,20 +72,6 @@ export default function ContainerTask() {
         HandlerFun={handlerClick}
       />
       <NavStatusTask Tableau={tableau} />
-      {/* <ul className={tableau.length ? "overflow-y-scroll h-80" : "h-80"}>
-        {tableau.map((task) => (
-          <div key={task.id}>
-            <TaskList
-              title={task.title}
-              projet={task.projet}
-              Start={task.Start}
-              Closed={task.Closed}
-              HandlerSelected={()=>handlerSeleded(task.id)}
-              isSelected={selectedCard===task.id}
-            />
-          </div>
-        ))}
-      </ul> */}
     </div>
   );
 }

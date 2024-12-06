@@ -8,9 +8,11 @@ export default function BtnstatusTask(props) {
       <button className="text-gray-400 text-xl capitalize MiniPortable:text-lg mobil:text-lg">
         {props.title}
       </button>
-      <span className="bg-gray-400 rounded-full text-sm text-white p-2 ml-2 mobil:ml-2 mobil:text-sm MiniPortable:text-xs ">
-        {props.number.length}
-      </span>
+      <div className="w-10 h-10 flex justify-center items-center bg-gray-400 rounded-full text-sm text-white p-2 ml-2 mobil:ml-2 mobil:text-sm MiniPortable:text-xs ">
+        <span>
+            {props.number.length}
+        </span>
+      </div>
     </div>
   );
 }
