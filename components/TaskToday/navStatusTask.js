@@ -12,7 +12,11 @@ export default function NavStatusTask(props) {
   const [card4, setCard4] = useState(false);
   const Style="text-blue"
   const handlerClicked=(e)=>{
-    console.log(e.isTrusted);
+    console.log(card1);
+    console.log(card2);
+    console.log(card3);
+    console.log(card4);
+    
     
     if (e.target.textContent=="all") {
       setCard1(true)
@@ -44,9 +48,9 @@ export default function NavStatusTask(props) {
     <>
       <nav className="grid grid-cols-4 mobil:grid-cols-3 MiniPortable:grid-cols-1 transition mobil:mx-2 max-w-[800px] m-auto my-20">
         <BtnstatusTask title="all" id="all" HandlerFunc={handlerClicked} number={props.Tableau} />
-        <BtnstatusTask title="open" id="open" HandlerFunc={handlerClicked} number="14" />
-        <BtnstatusTask title="closed" id="closed" HandlerFunc={handlerClicked} number="19" />
-        <BtnstatusTask title="archived" id="archived" HandlerFunc={handlerClicked} number="2" />
+        <BtnstatusTask title="open" id="open" HandlerFunc={handlerClicked} number={props.Tableau} />
+        <BtnstatusTask title="closed" id="closed" HandlerFunc={handlerClicked} number={props.Tableau} />
+        <BtnstatusTask title="archived" id="archived" HandlerFunc={handlerClicked} number={props.Tableau} />
       </nav>
       <section>
           {card1 && (<SectionAll tableau={props.Tableau}/>)}

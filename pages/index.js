@@ -13,6 +13,8 @@ export default function Home() {
 
 
   const handlerCliked=(e)=>{
+    console.log(e.target.id);
+    
     if (e.target.id=="Message") {
       setCard1(true)
       setCard2(false)

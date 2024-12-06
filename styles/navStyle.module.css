@@ -2,7 +2,7 @@
     @apply flex justify-around gap-4 border-b pt-14 px-1 mobil:gap-2 MiniPortable:gap-1 MiniPortable:justify-center
 }
 .btnNavStyleOn{
-    @apply capitalize text-2xl font-Outfit w-fit text-gray-400 pb-6 mobil:text-lg MiniPortable:text-sm 
+    @apply capitalize text-2xl font-Outfit w-full overflow-hidden text-gray-400 transition hover:text-black hover:border-b-2 hover:font-bold hover:border-black pb-6 mobil:text-lg MiniPortable:text-sm 
 }
 .btnNavStyleOff{
     @apply capitalize text-2xl font-Outfit text-black pb-6 border-black border-b

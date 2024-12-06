@@ -3,7 +3,7 @@ import Styles from "../../styles/navStyle.module.css";
 import BtnNav from "@/containers/btnNav/compBtnNav";
 
 export default function NavContainer(props) {
-
+  
   return (
     <>
       <nav className={`${Styles.containerNav}`}>
