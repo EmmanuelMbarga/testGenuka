@@ -9,6 +9,7 @@ export default function BtnNav(props) {
       <button
         onClick={props.handlerClick}
         className={`${Styles.btnNavStyleOn}`}
+        id={props.Id}
       >
         {props.title}
       </button>

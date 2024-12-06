@@ -9,16 +9,19 @@ export default function NavContainer(props) {
       <nav className={`${Styles.containerNav}`}>
         <BtnNav
           title="Message"
+          Id="Message"
           cardStyle={props.Cards}
           handlerClick={props.HandlerClicked}
         />
         <BtnNav
-          title="today's Talsk"
+          title="today's Task"
+          Id="today's Task"
           cardStyle={props.Cards}
           handlerClick={props.HandlerClicked}
         />
         <BtnNav
           title="last Activity"
+          Id="last Activity"
           cardStyle={props.Cards}
           handlerClick={props.HandlerClicked}
         />

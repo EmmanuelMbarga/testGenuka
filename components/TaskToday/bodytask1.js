@@ -1,13 +1,13 @@
 import React from "react";
 import Style from "../../styles/talskDay.module.css"
 import ContainerTitle from "./bodyTalskElemnt/containerTitle";
-import ContainerTask from "./conteinerTask";
+import ContainerAddTask from "./bodyTalskElemnt/containerAddTask";
 
-const Bodytask1 = () => {
+const Bodytask1 = (props) => {
   return (
     <div className={`${Style.conteinerElementTalsk}`}>
         <ContainerTitle/>
-        <ContainerTask/>
+        <ContainerAddTask handlerClicked={props.HandlerFun}/>
     </div>
   );
 };
