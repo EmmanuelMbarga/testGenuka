@@ -7,3 +7,24 @@
 .subTitleTask{
     @apply text-gray-400 text-2xl mobil:text-base MiniPortable:text-base
 }
+.taskCard1{
+    @apply flex justify-around items-center mobil:px-4 MiniPortable:px-4
+}
+.taskCardtitle{
+    @apply text-3xl capitalize mobil:text-xl MiniPortable:text-lg line-through
+}
+.taskSubTitle{
+    @apply text-xl capitalize text-gray-400 mt-4 mobil:text-lg mobil:mt-2 MiniPortable:text-sm MiniPortable:mt-2
+}
+.containerSelecteTaskOn{
+    @apply w-10 h-10 bg-blue-400 rounded-full flex justify-center items-center
+}
+.seledtTaskIcon{
+    @apply text-2xl text-white
+}
+.formtasklabel{
+    @apply capitalize text-xl mobil:text-lg MiniPortable:text-sm
+}
+.formStaskInput{
+    @apply text-xl p-2 rounded-md outline-none max-w-[500px] m-auto w-full MiniPortable:p-1
+}

@@ -7,7 +7,7 @@ export default function BtnstatusTask(props) {
         {props.title}
       </button>
       <span className="bg-gray-400 rounded-full text-sm text-white p-2 ml-2 mobil:ml-2 mobil:text-sm MiniPortable:text-xs ">
-        {props.number}
+        {props.number.length}
       </span>
     </div>
   );

@@ -33,7 +33,7 @@ export default function Home() {
   return (
       <div className="max-w-[1000px] my-8 bg-white rounded-xl m-auto mobil:mx-2 MiniPortable:mx-2">
           <NavContainer HandlerClicked={handlerCliked}/>
-          <div className="p-4 h-[600px]">
+          <div className="p-4 h-[700px]">
             {card1 && (<><p className="text-center font-Outfit capitalize text-3xl py-40 text-gray-400">none (0)</p></>)}
             {card2 && (<div><ContainerTask/></div>)}
             {card3 && (<><p className="text-center font-Outfit capitalize text-3xl py-40 text-gray-400 Tablette:text-lg mobil:text-lg MiniPortable:text-sm  ">no Activity to day</p></>)}
